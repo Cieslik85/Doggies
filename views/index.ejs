@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Doggies</title>
+</head>
+<body>
+    <h1>Doggies Gallery</h1>
+    <form action="/" method="get">
+        <button class="btn" type="submit">Next Picture</button>
+    </form>
+    <% if (image) { %>
+        
+        <div class="card">
+            <img src="<%= image %>" alt="Dog picture">
+        </div>
+        
+    <% } else if (error) { %>
+        <p><%= error %></p>
+    <% } %>
+
+</body>
+</html>
